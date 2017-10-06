@@ -5,9 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  fn: IRkernel-{{ version }}.tar.gz
-  url: https://github.com/IRkernel/IRkernel/archive/{{ version }}.tar.gz
-  sha256: a8faab55c6de09526a7c21ae1cd8c98d23327352fb3af3b2ca0c74657186ed3d
+
+
+  git_url: https://github.com/IRkernel/IRkernel
+  git_tag: 0.8.7
+  # You can add a hash for the file here, like md5, sha1 or sha256
+  # patches:
+   # List any patch files here
+   # - fix.patch
 
 build:
   number: 0
