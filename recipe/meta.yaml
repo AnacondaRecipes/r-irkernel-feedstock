@@ -20,6 +20,7 @@ source:
 build:
   # If this is a new build for the same version, increment the build number.
   number: 0
+  noarch: generic
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -29,9 +30,11 @@ build:
 # Suggests: testthat, roxygen2
 requirements:
   build:
-    - r-base
     - {{posix}}filesystem        # [win]
     - {{posix}}git
+
+  host:
+    - r-base
     - r-irdisplay >=0.3.0.9999
     - r-crayon
     - r-digest
