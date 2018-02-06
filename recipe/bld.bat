@@ -1,4 +1,4 @@
-"%R%" CMD INSTALL --build .
+"%R%" CMD INSTALL --build --no-html .
 if errorlevel 1 exit 1
 
 mkdir "%PREFIX%\share\jupyter\kernels\ir"
