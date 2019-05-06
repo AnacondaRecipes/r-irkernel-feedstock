@@ -31,6 +31,7 @@ requirements:
     - {{posix}}filesystem        # [win]
     - {{posix}}git
     - {{posix}}zip               # [win]
+    - {{posix}}patch
 
   host:
     - r-base
